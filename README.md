@@ -7,7 +7,7 @@ Simple Secure critical information.
 ```
     CipherText cipher();  
 ```
-### 2. Encrypt data by cipherText
+### 2. Insert Original data.
 ```
     char data[1023];   // my buffer data   
     size_t len;        // len data
