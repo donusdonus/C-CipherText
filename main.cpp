@@ -13,13 +13,15 @@ int main() {
     char data[1023];
     size_t len=0;
     
-    len = sprintf(&data[0],"Little John\n");
+    len = sprintf(&data[0],"Hello Everyone. How are You to day.");
 
+    //cipher.view_table("MY DATA",(uint8_t*)&data[0],len,10);
 
     cipher.encrypt((uint8_t*)&data[0],len,234);
     cipher.view_table("Data Encryption",(uint8_t*)&data[0],len,10);
     cipher.decrpyt((uint8_t*)&data[0],len,234);
     cipher.view_table("Data Decryption",(uint8_t*)&data[0],len,10);
+
 
     return 0;
 }
