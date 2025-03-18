@@ -17,12 +17,6 @@ Simple Secure critical information.
 ```
 ### 3. When see in charector and ascii dec style.
 ```
-    char data[1023];   // my buffer data   
-    size_t len;        // len data
-
-    /* data is Hello Everyone. How are You to day. */
-    len = sprintf(&data[0],"Hello Everyone. How are You to day.");
-    
     /* display data */
     cipher.view_table("MY DATA",(uint8_t*)&data[0],len,10);
 ```
