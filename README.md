@@ -1,6 +1,8 @@
 # CipherText
 Simple Secure critical information.
-
+Protect data
+- data confustor by encrypt
+- data parttern change by magic_nubmer
 ---
 ## Example
 ### 1. Declare class CipherText as cipher 
