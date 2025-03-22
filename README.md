@@ -2,7 +2,7 @@
 Simple Secure critical information.
 Protect data
 - data confustor by encrypt
-- data parttern change by magic_nubmer
+- data parttern change by magic_number
 ---
 ## Example
 ### 1. Declare class CipherText as cipher 
