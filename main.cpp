@@ -22,6 +22,5 @@ int main() {
     cipher.decrpyt((uint8_t*)&data[0],len,234);
     cipher.view_table("Data Decryption",(uint8_t*)&data[0],len,10);
 
-
     return 0;
 }

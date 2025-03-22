@@ -11,7 +11,8 @@
 #define esp32 2
 #define platform windows
 #if platform == windows
-    #define print(fmt, ...) printf(fmt, ##__VA_ARGS__)
+    #define _print(fmt, ...) printf(fmt, ##__VA_ARGS__)
+    #define _randon rand()
 #elif platform == esp32
     #define print(fmt, ...) log_printf(fmt, ##__VA_ARGS__)
 #endif
