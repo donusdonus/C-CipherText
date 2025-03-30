@@ -136,3 +136,31 @@ void CipherText::view_table(const char *table_name,uint8_t *buffer, size_t size,
 
     _print("+\n");
 }
+
+/// @brief print table for another laguage
+/// @param var_name variable name 
+/// @param data data array
+/// @param size data size
+void CipherText::print_array(const char *var_name,const uint8_t *data,size_t size)
+{
+    
+    _print("\n%s= [",var_name);
+    for(size_t c=0; c<size;c++)
+    { 
+        _print("%d%c%c",
+                            data[c],
+                            (c==(size-1))? ']':',',
+                            ((c%10==0)&&(c>0))?'\n':' '
+                        );
+    }
+    _print("\n");
+}
+
+
+void CipherText::XOR(uint8_t *data,size_t size,int magic_number)
+{
+    for(size_t i = 0; i < size; i++)
+    {
+        data[i] = data[i]^magic_number;   
+    }
+}
